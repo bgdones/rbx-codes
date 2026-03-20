@@ -10,7 +10,7 @@ function RateLimit.new(rate, timeLimit)
 	self.rate = rate
 	self.timeLimit = timeLimit
 	self.allowance = rate
-	self.lastFilled = tick()   -- current time in seconds
+	self.lastFilled = nill   -- current time in seconds
 	self.lastCheck = tick()
 	return self
 end
